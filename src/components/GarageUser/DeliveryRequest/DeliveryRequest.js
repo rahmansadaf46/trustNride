@@ -55,7 +55,7 @@ const DeliveryRequest = () => {
                                         Payment:{" "}
                                     </span>
                                     <span className="font-weight-bold text-dark">
-                                        {fd.finalData.paymentCategory}
+                                    {fd?.finalData.paymentCategory === 'Online Payment' ? <>{fd?.finalData.paymentCategory}</>:<>Cash On Service</>}
                                     </span>{" "}
                                 </p>
                                 {

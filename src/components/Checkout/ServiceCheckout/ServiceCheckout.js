@@ -332,7 +332,7 @@ const ServiceCheckout = () => {
                             Select Payment
                           </option>
                           <option value="Cash On Delivery">
-                            Cash On Delivery
+                            Cash On Service
                           </option>
                           <option value="Online Payment">
                             Online Payment

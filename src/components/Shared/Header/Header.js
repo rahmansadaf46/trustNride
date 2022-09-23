@@ -202,7 +202,12 @@ const Header = ({ cart }) => {
                         <br />
                         <span className="text-dark">Payment:</span>{" "}
                         <span className="text-warning">
-                          {fd?.finalData.paymentCategory}
+                        {fd?.finalData.category === 'Service' ? <>{fd?.finalData.paymentCategory === 'Online Payment' ? <>{fd?.finalData.paymentCategory}</>:<>Cash On Service</>}</>
+                          
+                        : <>  {fd?.finalData.paymentCategory}</>
+
+                        }
+                        
                         </span>
                       </div>
                       {fd?.finalData.category === "Product" ? (
